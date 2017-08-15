@@ -1,22 +1,50 @@
 .main-menu
   float right
   margin-top 22px
+  @media only screen and (max-width: 512px)
+    float none
+    margin-top 0
+
+  & ul
+    margin-right 7px
+    @media only screen and (max-width: 512px)
+      display none
+      background-color: #2980b9
+      width 100%
+      float left
+      margin 0 0 20px 0
+      padding 20px 0
+
+
 
 .main-menu__item
   float left
   list-style none
-  margin-left 47px
+  margin-left 46px
   letter-spacing -0.045em
   text-align center
-
+  @media only screen and (max-width: 512px)
+    float none
+    text-align center
+    margin 10px 0
+    padding 0
 
 .main-menu__link
   font-weight 400
   color #fff
   text-decoration none
   font-size 13px
-  padding-bottom: 20px;
-
+  padding-bottom 20px
   &:hover
-    border-bottom: 4px solid #65c2ff;
+    border-bottom 4px solid #65c2ff
     text-decoration none
+
+  @media only screen and (max-width: 512px)
+    font-size 18px
+  &:hover
+    border-bottom none
+
+
+
+
+

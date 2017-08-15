@@ -1,0 +1,45 @@
+.hamburger
+  display none
+  width 50px
+  float right
+  margin-top 25px
+  padding-right 40px
+
+  &:hover
+    cursor pointer
+
+  &:active
+    color #fff
+    outline none
+
+  .line
+    width: 50px;
+    height: 5px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+  @media only screen and (max-width: 512px)
+    display block
+
+
+.is-active
+    .line:nth-child(2)
+      opacity 0
+
+    .line:nth-child(1)
+      -webkit-transform translateY(13px) rotate(45deg)
+      -ms-transform translateY(13px) rotate(45deg)
+      -o-transform translateY(13px) rotate(45deg)
+      transform translateY(13px) rotate(45deg)
+
+    .line:nth-child(3)
+      -webkit-transform translateY(-13px) rotate(-45deg)
+      -ms-transform translateY(-13px) rotate(-45deg)
+      -o-transform translateY(-13px) rotate(-45deg)
+      transform translateY(-13px) rotate(-45deg)
+
+
